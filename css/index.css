@@ -1,0 +1,137 @@
+body {
+    overflow-x: hidden;
+}
+
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 19px;
+}
+
+.hero {
+    background-image: url('../img/m.jpg');
+    background-size: cover;
+    height: 480px;
+    background-position: 0 -50px;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+
+.hero h2 {
+    font-size: 30px;
+    color: aliceblue;
+    z-index: 1;
+    position: relative;
+}
+
+
+.sub-unggulan {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 15px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.artikel, .testimoni{
+    background: #EFEFEF;
+    width: 100%;
+    height: 100%;
+}
+
+.judul-section {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sub-judul {
+    font-family: 'Poppins', sans-serif;
+}
+
+.sub {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.testi {
+    margin: auto;
+}
+
+.footer {
+    background: #1E1E1E;
+    height: 470px;
+}
+
+.hijau {
+    color: #ffffff;
+    background-image: linear-gradient(to right, #30E140, #56D4BE);
+    font-weight: 600;
+}
+
+@media screen and ( max-width: 440px ) {
+    .hero {
+        height: 300px;
+        background-size: cover;
+        background-position-y: -100px;
+    }
+
+    .judul-unggulan {
+        font-size: 22px !important;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+    }
+    .sub-judul-unggulan {
+        font-size: 17px !important;
+        font-family: 'Poppins', sans-serif;
+    }
+    .sub-unggulan {
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    .foto-artikel {
+        width: 310px;
+        height: 210px;
+    }
+
+    .sub {
+        padding: 10 0px;
+    }
+
+    .k {
+        margin-top: 40px;
+    }
+
+    .g-3 {
+        margin-top: 30px;
+    }
+
+    /* .testi {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 70px;
+    } */
+
+    .footer {
+        height: 900px;
+    }
+    .f-media {
+        width: 100% !important;
+    }
+    .f-sub {
+        padding-top: 12px;
+        margin-left: 10px;
+    }
+}
